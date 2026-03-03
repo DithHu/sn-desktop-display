@@ -1,0 +1,30 @@
+{
+  "name": "comp-electron-monitor",
+  "productName": "sn桌面小工具",
+  "version": "1.0.0",
+  "author": "xander@sina.com",
+  "description": "查看桌面状态",
+  "main": "index.js",
+  "scripts": {
+    "start": "chcp 65001 && electron-forge start",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "package": "electron-forge package",
+    "build": "cd ./ui-src && npm run build && cd.. && electron-forge make"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@electron-forge/cli": "^7.11.1",
+    "@electron-forge/maker-deb": "^7.11.1",
+    "@electron-forge/maker-rpm": "^7.11.1",
+    "@electron-forge/maker-squirrel": "^7.11.1",
+    "@electron-forge/maker-zip": "^7.11.1",
+    "@electron-forge/plugin-auto-unpack-natives": "^7.11.1",
+    "@electron-forge/plugin-fuses": "^7.11.1",
+    "@electron/fuses": "^1.8.0",
+    "electron": "^40.6.1"
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.1",
+    "systeminformation": "^5.31.1"
+  }
+}
