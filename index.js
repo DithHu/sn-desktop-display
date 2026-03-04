@@ -4,6 +4,7 @@ const os = require("os");
 const path = require("path");
 const si = require("systeminformation");
 const diskTool = require("./src/disk");
+const cpuTool = require("./src/cpu");
 
 // 为 Tray 对象保存一个全局引用以避免被垃圾回收
 let tray;
@@ -16,7 +17,7 @@ let isQuitting = false;
 
 const createWindow = () => {
   mainWindow = new BrowserWindow({
-    title: "sn桌面小工具",
+    title: "sn_monitor",
     width: 800,
     height: 600,
     autoHideMenuBar: true,
@@ -126,8 +127,7 @@ const getSystemInfo = async () => {
 ipcMain.handle("get-system-info", getSystemInfo);
 
 async function getCpuUsage() {
-  const cLoad = await si.currentLoad();
-  return Math.round(cLoad.currentLoad) + "%";
+  return Math.round(await cpuTool.getCpuUsage()) + "%";
 }
 
 async function getNetworkInfo() {

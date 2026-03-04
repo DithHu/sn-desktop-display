@@ -1,9 +1,9 @@
 {
-  "name": "comp-electron-monitor",
-  "productName": "sn桌面小工具",
-  "version": "1.0.0",
+  "name": "sn_monitor",
+  "productName": "sn_monitor",
+  "version": "1.0.2",
   "author": "xander@sina.com",
-  "description": "查看桌面状态",
+  "description": "View PC status.",
   "main": "index.js",
   "scripts": {
     "start": "chcp 65001 && electron-forge start",
