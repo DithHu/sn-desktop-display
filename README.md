@@ -1,2 +1,3 @@
 基于windows展示pc基本状态。
-<img width="782" height="589" alt="pc-state" src="https://github.com/user-attachments/assets/20dc3083-36a3-4b9c-91a5-d35ba8dede88" />
+<img width="391" height="295" alt="pc-state" src="https://github.com/user-attachments/assets/8a4e538c-19e5-4d23-9870-093052c269b4" />
+
